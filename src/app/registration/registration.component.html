@@ -1,0 +1,47 @@
+<div class="col-md-3 p-3 ml-3">
+
+        <form class="shadow-lg p-3">
+            <h4 class="mb-3 text-center">Gym</h4>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="name" [(ngModel)]="name" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="password" [(ngModel)]="password" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="dob">DOB:</label>
+                <input type="date" class="form-control" id="dob" name="dob" placeholder="dob" [(ngModel)]="dob" required>
+              </div>
+    
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact">Mobile No:</label>
+              <input type="number" class="form-control" id="contact" [(ngModel)]="contact" name="contact">
+            </div>
+    
+              <div>
+            <button type="button" class="btn btn-primary" (click)="registrationClick()">Submit</button> <br> <br>
+            </div>
+        </form>
+        </div>
+         <div class="col-md-8">
+             <table class="table">
+               <tr *ngFor="let user of users">
+                 <td>{{user.name}}</td>
+                 <td>{{user.contact}}</td>
+                 <td>{{user.email}}</td>
+                 <td>{{user.password}}</td>
+                </tr>
+              </table>
+            </div>
+    
+            
+         

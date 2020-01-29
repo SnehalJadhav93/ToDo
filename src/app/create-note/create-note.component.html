@@ -1,0 +1,30 @@
+<body>
+<div class="container">
+    <div class="row">
+        <h2 class="mt-2 text-white">Create Note :</h2>
+     <form action="/action_page.php">
+        <br> <br>
+       
+        <div class="form-group">
+        Topic: <input type="text" class="form-control" name="topic" placeholder="topic" [(ngModel)]="topic"/>     <!--for topic style we can give span in that we give topic-->
+        </div>
+
+
+        <div class="form-group">
+      Message: <input type="text" class="form-control" name="message" placeholder="message" [(ngModel)]="message"/>
+    </div>
+
+
+    
+    <button type="submit" class="btn btn-primary" (click)="clickCreate()">Create</button>
+  </form>
+
+    </div>
+</div>
+
+
+
+
+
+
+</body>
